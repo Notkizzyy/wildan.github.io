@@ -1,0 +1,76 @@
+/* Struktur dasar tetap sama */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* CV Container */
+.cv-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sidebar, .main-content {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 3px solid #fdd835;
+    box-shadow: 0 0 15px rgba(255, 221, 0, 0.7);
+    animation: fadeIn 1.5s ease-in;
+}
+
+.main-content {
+    flex: 3;
+    line-height: 1.8; /* Keterbacaan lebih baik */
+}
+
+/* Heading */
+h2 {
+    color: #fdd835;
+    margin-bottom: 15px;
+}
+h3 {
+    color: #fdd835;
+    margin-bottom: 15px;
+}
+
+.skills li, .experience ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sidebar {
+        max-width: 100%;
+    }
+
+    .main-content {
+        flex: 1;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Wildan Aulia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+/* Navbar Styling */
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    color: #f8c307;
+    margin-bottom: 10px;
+}
+
+.portfolio p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.item ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.item ul li {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.item ul li::before {
+    content: "•";
+    color: #f8c307;
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+</style>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo" <button type="button">wildanAulia</button></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="porto.html">Portfolio</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+        <div class="github-link">
+            <a href="https://github.com/Notkizzyy" target="_blank">
+                <img src="assets/image/github-icon.png" alt="GitHub">
+            </a>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Past Project Experience</h2>
+        <p>Explore the projects I've worked on so far</p>
+        <div class="portfolio-items">
+            <!-- Item 1 -->
+            <div class="item">
+                <h3>UNITYTOWN ROLEPLAY (2022 - 2023)</h3>
+                <ul>
+                    <li>Mengembangkan fitur sederhana menggunakan VSCode</li>
+                    <li>Memperbaiki bug kecil menggunakan Debugging</li>
+                </ul>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item">
+                <h3>TITIKTEMU ROLEPLAY (2024-ONGOING)</h3>
+                <ul>
+                    <li>Mengembangkan fitur secara mandiri</li>
+                    <li>Menangani modul atau proyek secara keseluruhan</li>
+                    <li>Melakukan optimisasi kode untuk meningkatkan performa</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
